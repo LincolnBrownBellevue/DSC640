@@ -1,0 +1,1101 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0524.1403                               -->
+<workbook original-version='18.1' source-build='2024.1.3 (20241.24.0524.1403)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Accidents and fatalities per year' inline='true' name='federated.07u6fdk0m28aws1de7sx70kpia0t' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Accidents and fatalities per year' name='excel-direct.0fbt0wu1h3iwge1ggwvop0vqhfli'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/x/Documents/DSC640/DSC640_TermProject/Accidents and fatalities per year.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0fbt0wu1h3iwge1ggwvop0vqhfli' name='PassengerFlights' table='[PassengerFlights$]' type='table'>
+          <columns gridOrigin='A1:C79:no:A1:C79:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='integer' name='Accidents' ordinal='1' />
+            <column datatype='integer' name='Fatalities' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0fbt0wu1h3iwge1ggwvop0vqhfli' name='PassengerFlights' table='[PassengerFlights$]' type='table'>
+          <columns gridOrigin='A1:C79:no:A1:C79:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='integer' name='Accidents' ordinal='1' />
+            <column datatype='integer' name='Fatalities' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[PassengerFlights]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C79:no:A1:C79:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[PassengerFlights]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PassengerFlights_FDFB7B64FF0845C580F72951E3C4C7C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accidents</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Accidents]</local-name>
+            <parent-name>[PassengerFlights]</parent-name>
+            <remote-alias>Accidents</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PassengerFlights_FDFB7B64FF0845C580F72951E3C4C7C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fatalities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fatalities]</local-name>
+            <parent-name>[PassengerFlights]</parent-name>
+            <remote-alias>Fatalities</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PassengerFlights_FDFB7B64FF0845C580F72951E3C4C7C9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Accidents]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Fatalities]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='PassengerFlights' datatype='table' name='[__tableau_internal_object_id__].[PassengerFlights_FDFB7B64FF0845C580F72951E3C4C7C9]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[PassengerFlights_FDFB7B64FF0845C580F72951E3C4C7C9]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:PassengerFlights_FDFB7B64FF0845C580F72951E3C4C7C9:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Accidents]' derivation='None' name='[none:Accidents:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Fatalities]' derivation='None' name='[none:Fatalities:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Accidents]' derivation='Sum' name='[sum:Accidents:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Fatalities]' derivation='Sum' name='[sum:Fatalities:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;[federated.07u6fdk0m28aws1de7sx70kpia0t].[none:Fatalities:qk]&quot;</bucket>
+            </map>
+            <map to='#2a5783'>
+              <bucket>&quot;[federated.07u6fdk0m28aws1de7sx70kpia0t].[sum:Fatalities:qk]&quot;</bucket>
+            </map>
+            <map to='#2a5783'>
+              <bucket>&quot;[federated.07u6fdk0m28aws1de7sx70kpia0t].[sum:VehicleFatalities:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.07u6fdk0m28aws1de7sx70kpia0t].[none:AirplaneFatalities:qk]&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;[federated.07u6fdk0m28aws1de7sx70kpia0t].[none:Accidents:qk]&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;[federated.07u6fdk0m28aws1de7sx70kpia0t].[sum:Accidents:qk]&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;[federated.0zpabju07an66z1c7pfiq1qm8kyw].[sum:Accidents:qk]&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;[federated.1uulvm60hffe6o1etph9i1nv4mzs].[sum:Accidents:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.07u6fdk0m28aws1de7sx70kpia0t].[__tableau_internal_object_id__].[cnt:Sheet1_64B3E348F0F041E998E8AE23C04D56DC:qk]&quot;</bucket>
+            </map>
+            <map to='#7eaed3'>
+              <bucket>&quot;[federated.07u6fdk0m28aws1de7sx70kpia0t].[__tableau_internal_object_id__].[cnt:PassengerFlights_FDFB7B64FF0845C580F72951E3C4C7C9:qk]&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;[federated.07u6fdk0m28aws1de7sx70kpia0t].[sum:AirplaneFatalities:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.07u6fdk0m28aws1de7sx70kpia0t]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.07u6fdk0m28aws1de7sx70kpia0t].[attr:VehicleFatalities:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.07u6fdk0m28aws1de7sx70kpia0t].[none:VehicleFatalities:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='PassengerFlights' id='PassengerFlights_FDFB7B64FF0845C580F72951E3C4C7C9'>
+            <properties context=''>
+              <relation connection='excel-direct.0fbt0wu1h3iwge1ggwvop0vqhfli' name='PassengerFlights' table='[PassengerFlights$]' type='table'>
+                <columns gridOrigin='A1:C79:no:A1:C79:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='integer' name='Accidents' ordinal='1' />
+                  <column datatype='integer' name='Fatalities' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (Airplane_Vehicle_Fatalities)' inline='true' name='federated.1cbeecm07jduit1evw4kb1r9t4fe' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Airplane_Vehicle_Fatalities' name='excel-direct.1k41bdq1a4vaaa13izlw71cbabma'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/x/Documents/DSC640/DSC640_TermProject/Airplane_Vehicle_Fatalities.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='airline-safety' name='textscan.1qhlgzo1ie6tjd129gvkd0t7ow2k'>
+            <connection class='textscan' directory='/Users/x/Documents/DSC640/DSC640_TermProject' filename='airline-safety.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1k41bdq1a4vaaa13izlw71cbabma' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C29:no:A1:C29:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='integer' name='AirplaneFatalities' ordinal='1' />
+            <column datatype='integer' name='VehicleFatalities' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1k41bdq1a4vaaa13izlw71cbabma' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C29:no:A1:C29:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='integer' name='AirplaneFatalities' ordinal='1' />
+            <column datatype='integer' name='VehicleFatalities' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C29:no:A1:C29:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_64B3E348F0F041E998E8AE23C04D56DC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AirplaneFatalities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AirplaneFatalities]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>AirplaneFatalities</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_64B3E348F0F041E998E8AE23C04D56DC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VehicleFatalities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[VehicleFatalities]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>VehicleFatalities</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_64B3E348F0F041E998E8AE23C04D56DC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Accidents]' role='measure' type='quantitative' />
+      <column caption='Airplane Fatalities' datatype='integer' name='[AirplaneFatalities]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Fatalities]' role='measure' type='quantitative' />
+      <column caption='Vehicle Fatalities' datatype='integer' name='[VehicleFatalities]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_64B3E348F0F041E998E8AE23C04D56DC]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Sheet1_64B3E348F0F041E998E8AE23C04D56DC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet1_64B3E348F0F041E998E8AE23C04D56DC:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[VehicleFatalities]' derivation='Attribute' name='[attr:VehicleFatalities:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[AirplaneFatalities]' derivation='None' name='[none:AirplaneFatalities:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[VehicleFatalities]' derivation='None' name='[none:VehicleFatalities:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Accidents]' derivation='Sum' name='[sum:Accidents:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[AirplaneFatalities]' derivation='Sum' name='[sum:AirplaneFatalities:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Fatalities]' derivation='Sum' name='[sum:Fatalities:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[VehicleFatalities]' derivation='Sum' name='[sum:VehicleFatalities:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;[federated.1cbeecm07jduit1evw4kb1r9t4fe].[sum:Fatalities:qk]&quot;</bucket>
+            </map>
+            <map to='#2a5783'>
+              <bucket>&quot;[federated.1cbeecm07jduit1evw4kb1r9t4fe].[sum:VehicleFatalities:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1cbeecm07jduit1evw4kb1r9t4fe].[none:AirplaneFatalities:qk]&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;[federated.0zpabju07an66z1c7pfiq1qm8kyw].[sum:Accidents:qk]&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;[federated.1cbeecm07jduit1evw4kb1r9t4fe].[sum:Accidents:qk]&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;[federated.1uulvm60hffe6o1etph9i1nv4mzs].[sum:Accidents:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1cbeecm07jduit1evw4kb1r9t4fe].[__tableau_internal_object_id__].[cnt:Sheet1_64B3E348F0F041E998E8AE23C04D56DC:qk]&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;[federated.1cbeecm07jduit1evw4kb1r9t4fe].[sum:AirplaneFatalities:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1cbeecm07jduit1evw4kb1r9t4fe]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1cbeecm07jduit1evw4kb1r9t4fe].[attr:VehicleFatalities:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1cbeecm07jduit1evw4kb1r9t4fe].[none:VehicleFatalities:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_64B3E348F0F041E998E8AE23C04D56DC'>
+            <properties context=''>
+              <relation connection='excel-direct.1k41bdq1a4vaaa13izlw71cbabma' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:C29:no:A1:C29:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='integer' name='AirplaneFatalities' ordinal='1' />
+                  <column datatype='integer' name='VehicleFatalities' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='airline-safety+' inline='true' name='federated.1sz209b1b82z1q1cv8jfp0fe07st' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='airline-safety' name='textscan.0syo2b001qzhh317m1juo1qtwgp0'>
+            <connection class='textscan' directory='/Users/x/Documents/DSC640/DSC640_TermProject' filename='airline-safety.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0syo2b001qzhh317m1juo1qtwgp0' name='airline-safety.csv' table='[airline-safety#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='airline' ordinal='0' />
+            <column datatype='integer' name='avail_seat_km_per_week' ordinal='1' />
+            <column datatype='integer' name='incidents_85_99' ordinal='2' />
+            <column datatype='integer' name='fatal_accidents_85_99' ordinal='3' />
+            <column datatype='integer' name='fatalities_85_99' ordinal='4' />
+            <column datatype='integer' name='incidents_00_14' ordinal='5' />
+            <column datatype='integer' name='fatal_accidents_00_14' ordinal='6' />
+            <column datatype='integer' name='fatalities_00_14' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0syo2b001qzhh317m1juo1qtwgp0' name='airline-safety.csv' table='[airline-safety#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='airline' ordinal='0' />
+            <column datatype='integer' name='avail_seat_km_per_week' ordinal='1' />
+            <column datatype='integer' name='incidents_85_99' ordinal='2' />
+            <column datatype='integer' name='fatal_accidents_85_99' ordinal='3' />
+            <column datatype='integer' name='fatalities_85_99' ordinal='4' />
+            <column datatype='integer' name='incidents_00_14' ordinal='5' />
+            <column datatype='integer' name='fatal_accidents_00_14' ordinal='6' />
+            <column datatype='integer' name='fatalities_00_14' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[airline-safety.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>airline</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[airline]</local-name>
+            <parent-name>[airline-safety.csv]</parent-name>
+            <remote-alias>airline</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airline-safety.csv_A11816C6C1E940459334A506F97154B3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avail_seat_km_per_week</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[avail_seat_km_per_week]</local-name>
+            <parent-name>[airline-safety.csv]</parent-name>
+            <remote-alias>avail_seat_km_per_week</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airline-safety.csv_A11816C6C1E940459334A506F97154B3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incidents_85_99</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[incidents_85_99]</local-name>
+            <parent-name>[airline-safety.csv]</parent-name>
+            <remote-alias>incidents_85_99</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airline-safety.csv_A11816C6C1E940459334A506F97154B3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fatal_accidents_85_99</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fatal_accidents_85_99]</local-name>
+            <parent-name>[airline-safety.csv]</parent-name>
+            <remote-alias>fatal_accidents_85_99</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airline-safety.csv_A11816C6C1E940459334A506F97154B3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fatalities_85_99</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fatalities_85_99]</local-name>
+            <parent-name>[airline-safety.csv]</parent-name>
+            <remote-alias>fatalities_85_99</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airline-safety.csv_A11816C6C1E940459334A506F97154B3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incidents_00_14</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[incidents_00_14]</local-name>
+            <parent-name>[airline-safety.csv]</parent-name>
+            <remote-alias>incidents_00_14</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airline-safety.csv_A11816C6C1E940459334A506F97154B3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fatal_accidents_00_14</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fatal_accidents_00_14]</local-name>
+            <parent-name>[airline-safety.csv]</parent-name>
+            <remote-alias>fatal_accidents_00_14</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airline-safety.csv_A11816C6C1E940459334A506F97154B3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fatalities_00_14</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fatalities_00_14]</local-name>
+            <parent-name>[airline-safety.csv]</parent-name>
+            <remote-alias>fatalities_00_14</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airline-safety.csv_A11816C6C1E940459334A506F97154B3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Total Fatalities 85-99' datatype='integer' name='[Calculation_296322810986528770]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([fatalities_85_99])' />
+      </column>
+      <column caption='Total Fatalities 00-14' datatype='integer' name='[Calculation_296322810986680323]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([fatalities_00_14])' />
+      </column>
+      <column caption='Period' datatype='string' name='[Calculation_296322810987016196]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Total&quot;' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='airline-safety.csv' datatype='table' name='[__tableau_internal_object_id__].[airline-safety.csv_A11816C6C1E940459334A506F97154B3]' role='measure' type='quantitative' />
+      <column caption='Airline' datatype='string' name='[airline]' role='dimension' type='nominal' />
+      <column caption='Avail Seat Km Per Week' datatype='integer' name='[avail_seat_km_per_week]' role='dimension' type='quantitative' />
+      <column caption='Fatal Accidents 00 14' datatype='integer' name='[fatal_accidents_00_14]' role='measure' type='quantitative' />
+      <column caption='Fatal Accidents 85 99' datatype='integer' name='[fatal_accidents_85_99]' role='measure' type='quantitative' />
+      <column caption='Fatalities 00 14' datatype='integer' name='[fatalities_00_14]' role='measure' type='quantitative' />
+      <column caption='Fatalities 85 99' datatype='integer' name='[fatalities_85_99]' role='measure' type='quantitative' />
+      <column caption='Incidents 00 14' datatype='integer' name='[incidents_00_14]' role='measure' type='quantitative' />
+      <column caption='Incidents 85 99' datatype='integer' name='[incidents_85_99]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[airline-safety.csv_A11816C6C1E940459334A506F97154B3]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:airline-safety.csv_A11816C6C1E940459334A506F97154B3:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[fatalities_85_99]' derivation='None' name='[none:fatalities_85_99:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[fatal_accidents_00_14]' derivation='Sum' name='[sum:fatal_accidents_00_14:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[fatal_accidents_85_99]' derivation='Sum' name='[sum:fatal_accidents_85_99:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[fatalities_00_14]' derivation='Sum' name='[sum:fatalities_00_14:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[fatalities_85_99]' derivation='Sum' name='[sum:fatalities_85_99:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[incidents_00_14]' derivation='Sum' name='[sum:incidents_00_14:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[incidents_85_99]' derivation='Sum' name='[sum:incidents_85_99:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_296322810986528770]' derivation='User' name='[usr:Calculation_296322810986528770:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_296322810986680323]' derivation='User' name='[usr:Calculation_296322810986680323:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;[federated.1sz209b1b82z1q1cv8jfp0fe07st].[usr:Calculation_296322810986528770:qk]&quot;</bucket>
+            </map>
+            <map to='#2a5783'>
+              <bucket>&quot;[federated.1sz209b1b82z1q1cv8jfp0fe07st].[usr:Calculation_296322810986528770:qk]:1&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1sz209b1b82z1q1cv8jfp0fe07st].[none:fatalities_85_99:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1sz209b1b82z1q1cv8jfp0fe07st].[sum:fatalities_85_99:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1sz209b1b82z1q1cv8jfp0fe07st].[sum:fatal_accidents_85_99:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1sz209b1b82z1q1cv8jfp0fe07st].[sum:fatal_accidents_00_14:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1sz209b1b82z1q1cv8jfp0fe07st].[sum:incidents_00_14:qk]&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;[federated.1sz209b1b82z1q1cv8jfp0fe07st].[usr:Calculation_296322810986680323:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1sz209b1b82z1q1cv8jfp0fe07st].[__tableau_internal_object_id__].[cnt:airline-safety.csv_A11816C6C1E940459334A506F97154B3:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1sz209b1b82z1q1cv8jfp0fe07st].[sum:fatalities_00_14:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1sz209b1b82z1q1cv8jfp0fe07st]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.1sz209b1b82z1q1cv8jfp0fe07st].[sum:incidents_85_99:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='airline-safety.csv' id='airline-safety.csv_A11816C6C1E940459334A506F97154B3'>
+            <properties context=''>
+              <relation connection='textscan.0syo2b001qzhh317m1juo1qtwgp0' name='airline-safety.csv' table='[airline-safety#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='airline' ordinal='0' />
+                  <column datatype='integer' name='avail_seat_km_per_week' ordinal='1' />
+                  <column datatype='integer' name='incidents_85_99' ordinal='2' />
+                  <column datatype='integer' name='fatal_accidents_85_99' ordinal='3' />
+                  <column datatype='integer' name='fatalities_85_99' ordinal='4' />
+                  <column datatype='integer' name='incidents_00_14' ordinal='5' />
+                  <column datatype='integer' name='fatal_accidents_00_14' ordinal='6' />
+                  <column datatype='integer' name='fatalities_00_14' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_307B2D73222646C39941D2A9CEC27C4B]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Line Plot of Fatalities 1994-2021' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Line Plot of Fatalities 1994-2021' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Airplane Fatalities Over Time'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Accidents and fatalities per year' name='federated.07u6fdk0m28aws1de7sx70kpia0t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07u6fdk0m28aws1de7sx70kpia0t'>
+            <column datatype='integer' name='[Fatalities]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fatalities]' derivation='Sum' name='[sum:Fatalities:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07u6fdk0m28aws1de7sx70kpia0t].[sum:Fatalities:qk]</rows>
+        <cols>[federated.07u6fdk0m28aws1de7sx70kpia0t].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{8CA532F6-5141-4D0A-8BA4-85351ADADA21}' />
+    </worksheet>
+    <worksheet name='Line Plot of Fatalities 1994-2021'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Airplane_Vehicle_Fatalities)' name='federated.1cbeecm07jduit1evw4kb1r9t4fe' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cbeecm07jduit1evw4kb1r9t4fe'>
+            <column caption='Airplane Fatalities' datatype='integer' name='[AirplaneFatalities]' role='measure' type='quantitative' />
+            <column caption='Vehicle Fatalities' datatype='integer' name='[VehicleFatalities]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AirplaneFatalities]' derivation='Sum' name='[sum:AirplaneFatalities:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[VehicleFatalities]' derivation='Sum' name='[sum:VehicleFatalities:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1cbeecm07jduit1evw4kb1r9t4fe].[sum:VehicleFatalities:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.1cbeecm07jduit1evw4kb1r9t4fe].[sum:VehicleFatalities:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1cbeecm07jduit1evw4kb1r9t4fe].[:Measure Names]' value='Legend'>
+              <formatted-text>
+                <run>Legend</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1cbeecm07jduit1evw4kb1r9t4fe].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1cbeecm07jduit1evw4kb1r9t4fe].[sum:AirplaneFatalities:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1cbeecm07jduit1evw4kb1r9t4fe].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1cbeecm07jduit1evw4kb1r9t4fe].[sum:VehicleFatalities:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1cbeecm07jduit1evw4kb1r9t4fe].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1cbeecm07jduit1evw4kb1r9t4fe].[sum:AirplaneFatalities:qk] + [federated.1cbeecm07jduit1evw4kb1r9t4fe].[sum:VehicleFatalities:qk])</rows>
+        <cols>[federated.1cbeecm07jduit1evw4kb1r9t4fe].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{427EA741-B4E7-4DB5-8479-059E31E7E656}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Accidents and fatalities per year' name='federated.07u6fdk0m28aws1de7sx70kpia0t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07u6fdk0m28aws1de7sx70kpia0t'>
+            <column datatype='integer' name='[Accidents]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Fatalities]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Accidents]' derivation='None' name='[none:Accidents:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fatalities]' derivation='None' name='[none:Fatalities:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07u6fdk0m28aws1de7sx70kpia0t].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.07u6fdk0m28aws1de7sx70kpia0t].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.07u6fdk0m28aws1de7sx70kpia0t].[none:Fatalities:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.07u6fdk0m28aws1de7sx70kpia0t].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.07u6fdk0m28aws1de7sx70kpia0t].[none:Accidents:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.07u6fdk0m28aws1de7sx70kpia0t].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='10' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.07u6fdk0m28aws1de7sx70kpia0t].[none:Fatalities:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.07u6fdk0m28aws1de7sx70kpia0t].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.07u6fdk0m28aws1de7sx70kpia0t].[none:Accidents:qk] + [federated.07u6fdk0m28aws1de7sx70kpia0t].[none:Fatalities:qk])</rows>
+        <cols>([federated.07u6fdk0m28aws1de7sx70kpia0t].[:Measure Names] * [federated.07u6fdk0m28aws1de7sx70kpia0t].[none:Year:qk])</cols>
+      </table>
+      <simple-id uuid='{65548489-BAE7-4974-B627-46A0278D1255}' />
+    </worksheet>
+    <worksheet name='Total Fatalities 85-99 vs 00-14'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='airline-safety+' name='federated.1sz209b1b82z1q1cv8jfp0fe07st' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1sz209b1b82z1q1cv8jfp0fe07st'>
+            <column caption='Total Fatalities 85-99' datatype='integer' name='[Calculation_296322810986528770]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([fatalities_85_99])' />
+            </column>
+            <column caption='Total Fatalities 00-14' datatype='integer' name='[Calculation_296322810986680323]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([fatalities_00_14])' />
+            </column>
+            <column caption='Period' datatype='string' name='[Calculation_296322810987016196]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Total&quot;' />
+            </column>
+            <column caption='Fatalities 00 14' datatype='integer' name='[fatalities_00_14]' role='measure' type='quantitative' />
+            <column caption='Fatalities 85 99' datatype='integer' name='[fatalities_85_99]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_296322810987016196]' derivation='None' name='[none:Calculation_296322810987016196:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_296322810986528770]' derivation='User' name='[usr:Calculation_296322810986528770:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_296322810986680323]' derivation='User' name='[usr:Calculation_296322810986680323:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1sz209b1b82z1q1cv8jfp0fe07st].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1sz209b1b82z1q1cv8jfp0fe07st].[usr:Calculation_296322810986680323:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1sz209b1b82z1q1cv8jfp0fe07st].[usr:Calculation_296322810986528770:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <alphabetic-sort column='[federated.1sz209b1b82z1q1cv8jfp0fe07st].[:Measure Names]' direction='DESC' />
+          <slices>
+            <column>[federated.1sz209b1b82z1q1cv8jfp0fe07st].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1sz209b1b82z1q1cv8jfp0fe07st].[usr:Calculation_296322810986528770:qk]' scope='rows' value='true' />
+            <format attr='title' class='0' field='[federated.1sz209b1b82z1q1cv8jfp0fe07st].[usr:Calculation_296322810986680323:qk]' scope='rows' value='Fatalities' />
+            <encoding attr='space' class='0' field='[federated.1sz209b1b82z1q1cv8jfp0fe07st].[usr:Calculation_296322810986680323:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.1sz209b1b82z1q1cv8jfp0fe07st].[usr:Calculation_296322810986680323:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.1sz209b1b82z1q1cv8jfp0fe07st].[usr:Calculation_296322810986528770:qk]' scope='rows' value='Fatalities' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1sz209b1b82z1q1cv8jfp0fe07st].[:Measure Names]' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1sz209b1b82z1q1cv8jfp0fe07st].[:Measure Names]' value='Legend'>
+              <formatted-text>
+                <run>Legend</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1sz209b1b82z1q1cv8jfp0fe07st].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1sz209b1b82z1q1cv8jfp0fe07st].[usr:Calculation_296322810986680323:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1sz209b1b82z1q1cv8jfp0fe07st].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1sz209b1b82z1q1cv8jfp0fe07st].[usr:Calculation_296322810986528770:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1sz209b1b82z1q1cv8jfp0fe07st].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1sz209b1b82z1q1cv8jfp0fe07st].[usr:Calculation_296322810986528770:qk] + [federated.1sz209b1b82z1q1cv8jfp0fe07st].[usr:Calculation_296322810986680323:qk])</rows>
+        <cols>([federated.1sz209b1b82z1q1cv8jfp0fe07st].[none:Calculation_296322810987016196:nk] / [federated.1sz209b1b82z1q1cv8jfp0fe07st].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{FCC11AC7-789B-4124-8376-64AD8ACD7792}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Airplane Safety Dashboard'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='49000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='49000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='49000' id='3' name='Line Plot of Fatalities 1994-2021' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='49000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='8250' id='8' name='Line Plot of Fatalities 1994-2021' pane-specification-id='7' param='[federated.1cbeecm07jduit1evw4kb1r9t4fe].[:Measure Names]' type-v2='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8250' id='10' name='Total Fatalities 85-99 vs 00-14' pane-specification-id='4' param='[federated.1sz209b1b82z1q1cv8jfp0fe07st].[:Measure Names]' type-v2='color' w='16000' x='83200' y='9250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='49000' id='9' name='Total Fatalities 85-99 vs 00-14' w='49200' x='800' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49000' id='11' name='Airplane Fatalities Over Time' w='49200' x='50000' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='13' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='12' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Line Plot of Fatalities 1994-2021' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8250' id='8' name='Line Plot of Fatalities 1994-2021' pane-specification-id='5' param='[federated.1cbeecm07jduit1evw4kb1r9t4fe].[:Measure Names]' type-v2='color' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='9' is-fixed='true' name='Total Fatalities 85-99 vs 00-14' w='49200' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8250' id='10' name='Total Fatalities 85-99 vs 00-14' pane-specification-id='4' param='[federated.1sz209b1b82z1q1cv8jfp0fe07st].[:Measure Names]' type-v2='color' w='16000' x='83200' y='9250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='11' is-fixed='true' name='Airplane Fatalities Over Time' w='49200' x='50000' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4FA68B73-FE93-4D65-B9D0-FA355C811431}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='72'>
+    <window class='dashboard' maximized='true' name='Airplane Safety Dashboard'>
+      <viewpoints>
+        <viewpoint name='Airplane Fatalities Over Time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Line Plot of Fatalities 1994-2021'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Fatalities 85-99 vs 00-14'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='10' />
+      <simple-id uuid='{BA034205-FD3A-4842-86CD-3B31DF38C568}' />
+    </window>
+    <window class='worksheet' name='Line Plot of Fatalities 1994-2021'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='7' param='[federated.1cbeecm07jduit1evw4kb1r9t4fe].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1ABD2C91-C071-4E31-BEB1-E3587AECCA95}' />
+    </window>
+    <window class='worksheet' name='Total Fatalities 85-99 vs 00-14'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.1sz209b1b82z1q1cv8jfp0fe07st].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3A63C67C-57E7-496C-ABB3-59BA093CD9AE}' />
+    </window>
+    <window class='worksheet' name='Airplane Fatalities Over Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F7F0BC8E-C420-4841-84CA-6006C975A3FA}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='9' param='[federated.07u6fdk0m28aws1de7sx70kpia0t].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{446B8E83-7A67-4440-85E2-E832B7328925}' />
+    </window>
+  </windows>
+</workbook>
