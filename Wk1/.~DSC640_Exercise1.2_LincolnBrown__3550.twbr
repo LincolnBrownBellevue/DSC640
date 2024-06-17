@@ -426,10 +426,11 @@
                 <format attr='mark-labels-cull' value='true' />
               </style-rule>
               <style-rule element='pane'>
-                <format attr='minheight' value='-1' />
-                <format attr='maxheight' value='-1' />
-                <format attr='minwidth' value='-1' />
-                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='334' />
+                <format attr='maxheight' value='334' />
+                <format attr='minwidth' value='248' />
+                <format attr='maxwidth' value='248' />
+                <format attr='aspect' value='0' />
               </style-rule>
             </style>
           </pane>
@@ -664,7 +665,7 @@
     </dashboard>
   </dashboards>
   <windows source-height='30'>
-    <window class='dashboard' maximized='true' name='Hot Dog Eating Contest'>
+    <window class='dashboard' name='Hot Dog Eating Contest'>
       <viewpoints>
         <viewpoint name='Number of Dogs Eaten by Country Bar Chart'>
           <zoom type='entire-view' />
@@ -762,7 +763,7 @@
       </cards>
       <simple-id uuid='{618BF02D-7A51-4917-8914-6F66CB67ABA8}' />
     </window>
-    <window class='worksheet' name='Number of New Records by Country'>
+    <window class='worksheet' maximized='true' name='Number of New Records by Country'>
       <cards>
         <edge name='left'>
           <strip size='160'>

@@ -40,18 +40,16 @@ agg_data <- hotdog_contest_df %>%
   group_by(Country) %>%
   summarize(total_dogs_eaten = sum(Dogs.eaten))
 
-# Merge the aggregated data into merged_df
-merged_df <- merge(hotdog_contest_df, agg_data, by = "Country")
-
 # Reorder the Country by the total number of hot dogs eaten
-merged_df$Country <- reorder(merged_df$Country, merged_df$total_dogs_eaten)
+agg_data$Country <- reorder(agg_data$Country, agg_data$total_dogs_eaten)
 
 # Create the bar graph with reordered countries
-ggplot(merged_df, aes(x = Country, y = Dogs.eaten)) + 
+ggplot(agg_data, aes(x = Country, y = total_dogs_eaten)) + 
   geom_bar(stat = "identity", fill = "#698BB2") + 
-  labs(title = "Number of Hot Dogs Eaten by Country", x = "Country", y = "Number of Hot Dogs Eaten") +
+  labs(title = "Number of Hot Dogs Eaten by Country", x = "Country", y = "Total Number of Hot Dogs Eaten") +
   theme_minimal()
 ```
+
 Pie Chart
 This pie chart shows the number of hot dogs eaten by each country. 
 ```{r}
