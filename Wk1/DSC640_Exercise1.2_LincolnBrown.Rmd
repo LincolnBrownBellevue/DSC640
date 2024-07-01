@@ -21,16 +21,6 @@ hotdog_contest <- read_excel(path="./ex1-2/hotdog-contest-winners.xlsm")
 hotdog_contest_df <- data.frame(hotdog_contest)
 head(hotdog_contest_df)
 ```
-
-Stacked Bar Graph
-This stacked bar graph shows the number of hot dogs eaten by each winner, with each year's contribution displayed as a section of the stack. 
-```{r}
-# Create a Stacked Bar Graph
-ggplot(hotdog_contest_df, aes(x = reorder(Winner, Dogs.eaten), y=Dogs.eaten, fill=Year)) +
-  geom_bar(stat = "identity") + 
-  labs(title = "Hot Dogs Eaten by Winner", x = "Winner", y = "Number of Hot Dogs Eaten") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
-```
 Bar Graph
 This bar graph shows the number of hot dogs eaten by each country. 
 ```{r}
@@ -48,6 +38,15 @@ ggplot(agg_data, aes(x = Country, y = total_dogs_eaten)) +
   geom_bar(stat = "identity", fill = "#698BB2") + 
   labs(title = "Number of Hot Dogs Eaten by Country", x = "Country", y = "Total Number of Hot Dogs Eaten") +
   theme_minimal()
+```
+Stacked Bar Graph
+This stacked bar graph shows the number of hot dogs eaten by each winner, with each year's contribution displayed as a section of the stack. 
+```{r}
+# Create a Stacked Bar Graph
+ggplot(hotdog_contest_df, aes(x = reorder(Winner, Dogs.eaten), y=Dogs.eaten, fill=Year)) +
+  geom_bar(stat = "identity") + 
+  labs(title = "Hot Dogs Eaten by Winner", x = "Winner", y = "Number of Hot Dogs Eaten") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
 Pie Chart
