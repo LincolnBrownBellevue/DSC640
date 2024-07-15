@@ -1,0 +1,87 @@
+---
+title: "DSC640_Assignment1.2_LincolnBrown"
+output: html_notebook
+author: Lincoln Brown
+class: DSC640-T302
+professor: Professor Williams
+---
+
+Import the necessary libraries
+```{r}
+# Install Libraries
+library(dplyr)
+library(ggplot2)
+library(RColorBrewer)
+library(readxl)
+```
+
+Import the data, add it to a dataframe, and display the head
+```{r}
+hotdog_contest <- read_excel(path="./ex1-2/hotdog-contest-winners.xlsm")
+hotdog_contest_df <- data.frame(hotdog_contest)
+head(hotdog_contest_df)
+```
+Bar Graph
+This bar graph shows the number of hot dogs eaten by each country. 
+```{r}
+# Create a Bar graph
+# Aggregate data to get the total number of hot dogs eaten per country
+agg_data <- hotdog_contest_df %>%
+  group_by(Country) %>%
+  summarize(total_dogs_eaten = sum(Dogs.eaten))
+
+# Reorder the Country by the total number of hot dogs eaten
+agg_data$Country <- reorder(agg_data$Country, agg_data$total_dogs_eaten)
+
+# Create the bar graph with reordered countries
+ggplot(agg_data, aes(x = Country, y = total_dogs_eaten)) + 
+  geom_bar(stat = "identity", fill = "#698BB2") + 
+  labs(title = "Number of Hot Dogs Eaten by Country", x = "Country", y = "Total Number of Hot Dogs Eaten") +
+  theme_minimal()
+```
+Stacked Bar Graph
+This stacked bar graph shows the number of hot dogs eaten by each winner, with each year's contribution displayed as a section of the stack. 
+```{r}
+# Create a Stacked Bar Graph
+ggplot(hotdog_contest_df, aes(x = reorder(Winner, Dogs.eaten), y=Dogs.eaten, fill=Year)) +
+  geom_bar(stat = "identity") + 
+  labs(title = "Hot Dogs Eaten by Winner", x = "Winner", y = "Number of Hot Dogs Eaten") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+Pie Chart
+This pie chart shows the number of hot dogs eaten by each country. 
+```{r}
+# Create a pie chart
+sum_dogs_eaten <- aggregate(Dogs.eaten ~ Country, data = hotdog_contest_df, FUN = sum)
+pie(sum_dogs_eaten$Dogs.eaten, labels = paste(sum_dogs_eaten$Country,sum_dogs_eaten$Dogs.eaten), main = "Total Number of Dogs Eaten by Country", col = brewer.pal(n = nrow(sum_dogs_eaten), name="Blues"))
+```
+Donut Chart
+This donut chart shows the number of records set by each country. Japan and the United States were the only countries that had winners set a new record. 
+```{r}
+# Create a donut chart
+# Aggregate data to get the total number of new records set per country
+winner_data <- hotdog_contest_df %>%
+  group_by(Country) %>%
+  summarize(total_new_records = sum(New.record)) %>%
+  filter(total_new_records > 0)
+
+ggplot(winner_data, aes(x = 2, y = total_new_records, fill = Country)) + 
+  geom_bar(stat = "identity", width = 1) + 
+  coord_polar(theta = "y") +
+  theme_void() +
+  xlim(0.5, 2.5) +  # Adjust to create the hole in the center
+  labs(title = "Total Number of New Records Set by Country") +
+  theme(legend.position = "right") +
+  scale_fill_brewer(palette = "Blues")
+```
+Line Graph
+This line graph shows the total number of hot dogs consumed by the winner each year. 
+```{r}
+# Create a line graph
+ggplot(hotdog_contest_df, aes(x = Year, y = Dogs.eaten))+
+          geom_line(color="#698BB2") +
+          labs(title = "Number of Hot Dogs Eaten by Year",
+               x = "Year", y = "Dogs Eaten") + 
+          theme_minimal()
+```
